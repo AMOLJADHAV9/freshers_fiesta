@@ -79,9 +79,9 @@ const AdminLogin = ({ onLogin }) => {
       <div className="registration-link-container">
         <p className="registration-text">
           Don't have an admin account?{' '}
-          <Link to="/admin/register" className="registration-link">
+          {/* <Link to="/admin/register" className="registration-link">
             Register here
-          </Link>
+          </Link> */}
         </p>
       </div>
     </div>

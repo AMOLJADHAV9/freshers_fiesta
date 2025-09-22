@@ -49,8 +49,8 @@ function App() {
               element={user ? <StudentDashboardPage onLogout={() => setUser(null)} /> : <Navigate to="/student/login" />} 
             />
             <Route path="/admin/*" element={<Admin user={user} onLogin={setUser} onLogout={() => setUser(null)} />} />
-            {/* <Route path="/404" element={<NotFound />} />
-            <Route path="*" element={<Navigate to="/404" />} /> */}
+            <Route path="/404" element={<NotFound />} />
+            <Route path="*" element={<Navigate to="/404" />} />
           </Routes>
         </div>
       </div>
