@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AMOLJADHAV9.github.io/freshers_fiesta",
+  "homepage": "https://AMOLJADHAV9.github.io/freshers_fiesta/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
