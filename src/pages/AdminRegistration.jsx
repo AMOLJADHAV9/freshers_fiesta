@@ -1,5 +1,6 @@
 import React from 'react';
 import AdminRegistrationForm from '../components/AdminRegistrationForm';
+import Footer from '../components/Footer';
 import './AdminRegistration.css';
 
 const AdminRegistration = () => {
@@ -18,10 +19,6 @@ const AdminRegistration = () => {
       </div>
       
       <AdminRegistrationForm onRegistrationSuccess={handleRegistrationSuccess} />
-      
-      <div className="page-footer">
-        <p>© {new Date().getFullYear()} Fresher's Fiesta. All rights reserved.</p>
-      </div>
     </div>
   );
 };

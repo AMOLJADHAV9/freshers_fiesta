@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import RegistrationForm from '../components/RegistrationForm';
-import Footer from '../components/Footer';
 import './Home.css';
 
 const Home = () => {
@@ -52,8 +51,6 @@ const Home = () => {
           </div>
         </section>
       </main>
-      
-      <Footer />
     </div>
   );
 };
