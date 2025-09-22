@@ -1,0 +1,169 @@
+.footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-brand {
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-subtitle {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-links-section {
+  text-align: center;
+}
+
+.footer-links-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #e5e7eb;
+}
+
+.footer-links-list {
+  color: #9ca3af;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-list li {
+  margin-bottom: 0.25rem;
+}
+
+.footer-links-list li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-link {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.footer-contact-item {
+  color: #9ca3af;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.footer-divider {
+  border-top: 1px solid #374151;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.footer-college-info {
+  margin-bottom: 1rem;
+}
+
+.footer-college-name {
+  color: #9ca3af;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  font-size: 0.875rem;
+}
+
+.footer-developer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-developer {
+  color: #9ca3af;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.footer-copyright {
+  color: #9ca3af;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 2rem 0;
+  }
+  
+  .footer-content {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .footer-brand {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  
+  .footer-links {
+    justify-content: flex-start;
+  }
+  
+  .footer-links-section {
+    text-align: left;
+  }
+  
+  .footer-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .footer-college-info {
+    margin-bottom: 0;
+  }
+  
+  .footer-developer-info {
+    text-align: right;
+  }
+  
+  .footer-title {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+  
+  .footer-college-name,
+  .footer-developer,
+  .footer-copyright {
+    font-size: 0.875rem;
+  }
+}
