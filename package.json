@@ -1,14 +1,14 @@
 {
-  "homepage": "https://AMOLJADHAV9.github.io/fresher_fista-2k25",
+  
   "name": "fresher-mpgi",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
-  "scripts": {
+  "homepage": "https://AMOLJADHAV9.github.io/fresher_fiesta-2k25",
+"scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview" ,
+    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
