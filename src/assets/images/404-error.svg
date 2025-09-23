@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <style>
+    .text { font-family: 'Arial', sans-serif; font-weight: bold; }
+    .title { font-size: 120px; fill: #6a11cb; }
+    .subtitle { font-size: 40px; fill: #2575fc; }
+    .description { font-size: 24px; fill: #555; }
+    .emoji { font-size: 80px; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)" />
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f7fa" />
+      <stop offset="100%" stop-color="#e4edf9" />
+    </linearGradient>
+    <linearGradient id="errorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a11cb" />
+      <stop offset="100%" stop-color="#2575fc" />
+    </linearGradient>
+    <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a11cb" />
+      <stop offset="100%" stop-color="#2575fc" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Emoji -->
+  <text x="50%" y="150" text-anchor="middle" class="text emoji">🔍</text>
+  
+  <!-- 404 Text with shadow -->
+  <text x="52%" y="282" text-anchor="middle" class="text title" fill="url(#shadowGradient)" opacity="0.2">404</text>
+  <text x="50%" y="280" text-anchor="middle" class="text title" fill="url(#errorGradient)">404</text>
+  
+  <!-- Error Message -->
+  <text x="50%" y="350" text-anchor="middle" class="text subtitle">Page Not Found</text>
+  
+  <!-- Description -->
+  <text x="50%" y="400" text-anchor="middle" class="text description">The page you're looking for doesn't exist</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="150" cy="100" r="20" fill="#6a11cb" opacity="0.1" />
+  <circle cx="650" cy="80" r="30" fill="#2575fc" opacity="0.1" />
+  <circle cx="100" cy="500" r="25" fill="#6a11cb" opacity="0.1" />
+  <circle cx="700" cy="520" r="35" fill="#2575fc" opacity="0.1" />
+  
+  <!-- Floating shapes -->
+  <path d="M300,450 Q350,400 400,450 T500,450" fill="none" stroke="#6a11cb" stroke-width="3" opacity="0.3" />
+  <path d="M200,200 Q250,150 300,200 T400,200" fill="none" stroke="#2575fc" stroke-width="3" opacity="0.3" />
+</svg>

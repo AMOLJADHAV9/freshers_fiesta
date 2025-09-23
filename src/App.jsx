@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
-import StudentLoginPage from './pages/StudentLogin';
-import StudentDashboardPage from './pages/StudentDashboard';
-import StudentLanding from './pages/StudentLanding';
+import NotFound from './pages/NotFound';
 import { auth } from './firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 import Footer from './components/Footer';
@@ -39,17 +37,9 @@ function App() {
         <div className="content-container">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/student" element={<StudentLanding />} />
-            <Route 
-              path="/student/login" 
-              element={!user ? <StudentLoginPage onLogin={setUser} /> : <Navigate to="/student/dashboard" />} 
-            />
-            <Route 
-              path="/student/dashboard" 
-              element={user ? <StudentDashboardPage onLogout={() => setUser(null)} /> : <Navigate to="/student/login" />} 
-            />
             <Route path="/admin/*" element={<Admin user={user} onLogin={setUser} onLogout={() => setUser(null)} />} />
-            <Route path="*" element={<Navigate to="/" />} />
+            <Route path="/404" element={<NotFound />} />
+            <Route path="*" element={<Navigate to="/404" />} />
           </Routes>
         </div>
         <Footer />

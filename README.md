@@ -4,16 +4,15 @@ A React-based web application for student registration in Fresher's Fiesta event
 
 ## Features
 
-- Student registration for solo and group events
 - Admin dashboard with authentication
 - Data storage in Firestore
-- Responsive design with Tailwind CSS
+- Responsive design with CSS
 - Export functionality for registration data
 
 ## Tech Stack
 
 - **Frontend**: React.js with Vite
-- **Styling**: Tailwind CSS
+- **Styling**: CSS
 - **Backend**: Firebase (Authentication & Firestore)
 - **Routing**: React Router
 
@@ -64,7 +63,7 @@ A React-based web application for student registration in Fresher's Fiesta event
 ```
 src/
 ├── components/
-│   ├── RegistrationForm.jsx
+│   ├── AdminRegistrationForm.jsx
 │   ├── AdminLogin.jsx
 │   └── AdminDashboard.jsx
 ├── firebase.js
@@ -106,4 +105,3 @@ service cloud.firestore {
 
 - [React Documentation](https://reactjs.org/)
 - [Firebase Documentation](https://firebase.google.com/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
